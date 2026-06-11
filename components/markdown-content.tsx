@@ -1,0 +1,4 @@
+export function MarkdownContent({content}:{content:string}){
+ const lines=content.split('\n');const nodes:React.ReactNode[]=[];let list:string[]=[];
+ const flush=()=>{if(list.length){nodes.push(<ul key={`ul-${nodes.length}`} className="my-5 list-disc space-y-2 pl-6">{list.map((x,i)=><li key={i}>{x}</li>)}</ul>);list=[];}};
+ lines.forEach((raw,i)=>{const line=raw.trim();if(line.startsWith('- ')){list.push(line.slice(2));return;}flush();if(!line)return;if(line.startsWith('# '))nodes.push(<h1 key={i} className="mb-6 text-4xl font-black">{line.slice(2)}</h1>);else if(line.startsWith('## '))nodes.push(<h2 key={i} className="mb-3 mt-8 text-2xl font-black">{line.slice(3)}</h2>);else if(line.startsWith('### '))nodes.push(<h3 key={i} className="mb-2 mt-6 text-xl font-bold">{line.slice(4)}</h3>);else nodes.push(<p key={i} className="my-4 leading-8 text-slate-700">{line}</p>)});flush();return <article>{nodes}</article>}

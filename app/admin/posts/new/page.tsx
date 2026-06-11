@@ -1,0 +1,2 @@
+import { redirect } from "next/navigation";import { getAdminSession } from "@/lib/auth";import { PostEditor } from "@/components/admin/post-editor";
+export default async function NewPost(){if(!(await getAdminSession()))redirect('/admin/login');return <main className="min-h-screen bg-slate-100 p-5"><div className="mx-auto max-w-4xl"><h1 className="mb-6 text-3xl font-black">Thêm bài viết</h1><PostEditor/></div></main>}

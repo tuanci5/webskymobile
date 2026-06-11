@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --accent: #facc15;
+  --muted: #64748b;
+  --border: #e2e8f0;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Inter, "Noto Sans", "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container-page {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.sky-gradient {
+  background:
+    radial-gradient(circle at 20% 15%, rgba(250, 204, 21, 0.28), transparent 28%),
+    radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.25), transparent 30%),
+    linear-gradient(135deg, #eff6ff 0%, #f8fafc 48%, #e0f2fe 100%);
+}
+
+@layer components {
+  .admin-input { @apply mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 outline-none focus:border-sky-500; }
+  .label { @apply block text-sm font-bold text-slate-700; }
+}

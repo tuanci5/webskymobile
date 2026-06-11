@@ -1,0 +1,3 @@
+import { notFound,redirect } from "next/navigation";import { getAdminSession } from "@/lib/auth";import { Post,query } from "@/lib/db";import { PostEditor } from "@/components/admin/post-editor";
+export const dynamic='force-dynamic';
+export default async function EditPost({params}:{params:Promise<{id:string}>}){if(!(await getAdminSession()))redirect('/admin/login');const {id}=await params;const {rows}=await query<Post>('select * from posts where id=$1 limit 1',[id]);if(!rows[0])notFound();return <main className="min-h-screen bg-slate-100 p-5"><div className="mx-auto max-w-4xl"><h1 className="mb-6 text-3xl font-black">Chỉnh sửa bài viết</h1><PostEditor post={rows[0]}/></div></main>}
