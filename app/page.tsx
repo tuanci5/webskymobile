@@ -1,6 +1,6 @@
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { BenefitsSection, FinalCtaSection, HeroSection, NoticesSection, PlanFinderSection, RegistrationStepsSection, ServicesSection, TestimonialsSection } from "@/components/sections";
+import { BenefitsSection, FinalCtaSection, HeroSection, LatestNewsSection, NoticesSection, PlanFinderSection, RegistrationStepsSection, ServicesSection, TestimonialsSection } from "@/components/sections";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <BenefitsSection />
         <RegistrationStepsSection />
         <TestimonialsSection />
+        <LatestNewsSection />
         <FinalCtaSection />
         <NoticesSection />
       </main>
