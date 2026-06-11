@@ -5,7 +5,7 @@ export type NewsItem = {
   category: string;
   publishedAt: string;
   image: string;
-  sourceUrl: string;
+  href: string;
 };
 
 // Nội dung tin được tổng hợp từ website chính thức skymobile.jp.
@@ -19,8 +19,7 @@ export const latestNews: NewsItem[] = [
     publishedAt: "2026-06-01",
     image:
       "https://storage.googleapis.com/my-web-media-2026/uploads%2F1780305097096-SPEED-WI-FI-HOME-5G-L13-5.png",
-    sourceUrl:
-      "https://www.skymobile.jp/vi/tin-tuc/huong-dan-cai-at-nhanh-speed-wi-fi-home-5g-l13",
+    href: "/bai-viet/huong-dan-cai-at-nhanh-speed-wi-fi-home-5g-l13",
   },
   {
     slug: "sim-softbank-chon-ung-goi-tiet-kiem-nhat-tai-nhat",
@@ -31,8 +30,7 @@ export const latestNews: NewsItem[] = [
     publishedAt: "2026-04-24",
     image:
       "https://storage.googleapis.com/my-web-media-2026/uploads%2F1777023067537-sim-softbank-chon-dung-goi-tiet-kiem-nhat-tai-nhat.jpg",
-    sourceUrl:
-      "https://www.skymobile.jp/vi/tin-tuc/sim-softbank-chon-ung-goi-tiet-kiem-nhat-tai-nhat",
+    href: "/bai-viet/sim-softbank-chon-ung-goi-tiet-kiem-nhat-tai-nhat",
   },
   {
     slug: "pocket-wifi-japan-unlimited",
@@ -43,7 +41,7 @@ export const latestNews: NewsItem[] = [
     publishedAt: "2026-04-23",
     image:
       "https://storage.googleapis.com/my-web-media-2026/uploads%2F1776918009676-pocket-wifi-japan-unlimited-dung-mua-truoc-khi-doc-dieu-nay.jpg",
-    sourceUrl: "https://www.skymobile.jp/vi/tin-tuc/pocket-wifi-japan-unlimited",
+    href: "/bai-viet/pocket-wifi-japan-unlimited",
   },
 ];
 
