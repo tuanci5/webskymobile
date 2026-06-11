@@ -17,8 +17,7 @@ export const latestNews: NewsItem[] = [
       "Speed Wi-Fi HOME 5G L13 là thiết bị phát Wi-Fi 5G được nhiều người lựa chọn nhờ khả năng kết nối ổn định, hỗ trợ nhiều phương thức kết nối và thao tác cài đặt đơn giản.",
     category: "Hướng dẫn",
     publishedAt: "2026-06-01",
-    image:
-      "https://storage.googleapis.com/my-web-media-2026/uploads%2F1780305097096-SPEED-WI-FI-HOME-5G-L13-5.png",
+    image: "/media/speed-wifi-home-5g-l13.png",
     href: "/bai-viet/huong-dan-cai-at-nhanh-speed-wi-fi-home-5g-l13",
   },
   {
@@ -28,8 +27,7 @@ export const latestNews: NewsItem[] = [
       "Sim Softbank là lựa chọn quen thuộc của người Việt tại Nhật nhờ độ ổn định cao và sóng mạnh. Tìm hiểu cách chọn đúng gói, dùng hiệu quả và tiết kiệm ngay từ đầu.",
     category: "Tin tức",
     publishedAt: "2026-04-24",
-    image:
-      "https://storage.googleapis.com/my-web-media-2026/uploads%2F1777023067537-sim-softbank-chon-dung-goi-tiet-kiem-nhat-tai-nhat.jpg",
+    image: "/media/sim-softbank-tiet-kiem-nhat-tai-nhat.jpg",
     href: "/bai-viet/sim-softbank-chon-ung-goi-tiet-kiem-nhat-tai-nhat",
   },
   {
@@ -39,8 +37,7 @@ export const latestNews: NewsItem[] = [
       "Pocket Wifi Japan Unlimited là giải pháp kết nối được nhiều người lựa chọn khi đến Nhật. Xem các lưu ý để chọn thiết bị mạnh, ổn định và phù hợp nhu cầu.",
     category: "Tin tức",
     publishedAt: "2026-04-23",
-    image:
-      "https://storage.googleapis.com/my-web-media-2026/uploads%2F1776918009676-pocket-wifi-japan-unlimited-dung-mua-truoc-khi-doc-dieu-nay.jpg",
+    image: "/media/pocket-wifi-japan-unlimited.jpg",
     href: "/bai-viet/pocket-wifi-japan-unlimited",
   },
 ];
